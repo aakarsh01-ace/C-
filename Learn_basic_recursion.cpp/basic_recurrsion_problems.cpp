@@ -74,18 +74,79 @@
 // }
 
 // Method 2: Functional way
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int f(int n){
+//   if(n==0) return 0;
+//   return n+f(n-1);
+// }
+
+// int main(){
+//   int a;
+//   cin>>a;
+//   int sum = f(a);
+//   cout<<sum;
+//   return 0;
+// }
+
+// Question 5: factorial of n using recursion
+
+// Method 1: functional way
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int f(int n){
+//   if(n==0){
+//     return 1;
+//   }
+//   return n*f(n-1);
+// }
+
+// int main(){
+//   int x;
+//   cin>>x;
+
+//   int res = f(x);
+//   cout<<res;
+//   return 0;
+// }
+
+// Method 2: parameterized way
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// void f(int i, int fct){
+//   if(i==0){
+//     cout<<fct;
+//     return;
+//   }
+//   f(i-1, fct*i);
+// }
+
+// int main(){
+//   int n;
+//   cin>>n;
+//   f(n,1);
+//   return 0;
+// }
+
+// Question 6: reverse an array using recursion
 #include <bits/stdc++.h>
 using namespace std;
 
-int f(int n){
-  if(n==0) return 0;
-  return n+f(n-1);
+void f(int i, int a[], int n){
+  if(i>=n/2) return;
+  swap(a[i], a[n-i-1]);
+  f(i+1, a, n);
 }
 
 int main(){
-  int a;
-  cin>>a;
-  int sum = f(a);
-  cout<<sum;
+  int n;
+  cin>>n;
+  int a[n];
+  for(int i=0; i<n; i++) cin>>a[i];
+  f(0, a, n);
+  for(int i=0; i<n; i++) cout<<a[i]<<" ";
   return 0;
 }
