@@ -1,5 +1,5 @@
 // // Question: find the largest element in the array
-// // an optimal approach approach
+// // an optimal approach
 
 // #include <bits/stdc++.h>
 // using namespace std;

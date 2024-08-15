@@ -45,27 +45,27 @@ using namespace std;
 
 // Optimal approach
 // using the xor approach
-vector<int> Count_one(vector<int> arr, int n){
-  int xorr = 0;
-  for(int i=0; i<n; i++){
-    xorr = xorr^arr[i];
-  }
-  return {xorr};
-}
+// vector<int> Count_one(vector<int> arr, int n){
+//   int xorr = 0;
+//   for(int i=0; i<n; i++){
+//     xorr = xorr^arr[i];
+//   }
+//   return {xorr};
+// }
 
-int main(){
-  int n;
-  cin>>n;
-  vector<int> arr(n);
-  for(int i=0; i<n; i++){
-    cin>>arr[i];
-  }
+// int main(){
+//   int n;
+//   cin>>n;
+//   vector<int> arr(n);
+//   for(int i=0; i<n; i++){
+//     cin>>arr[i];
+//   }
 
-  vector<int> res = Count_one(arr, n);
-  for(int i=0; i<res.size(); i++){
-    cout<<res[i]<<" ";
-  }
-  cout<<endl;
-  return 0;
-}
+//   vector<int> res = Count_one(arr, n);
+//   for(int i=0; i<res.size(); i++){
+//     cout<<res[i]<<" ";
+//   }
+//   cout<<endl;
+//   return 0;
+// }
 

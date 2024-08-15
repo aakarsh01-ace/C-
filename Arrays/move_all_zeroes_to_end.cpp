@@ -42,4 +42,11 @@ using namespace std;
 // }
 
 // better approach
+// optimal approach
 
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int MoveZero(vector<int> arr){
+  
+// }
