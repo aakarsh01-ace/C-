@@ -1,4 +1,4 @@
-// count of 2nd higheest element
+// count of 2nd highest element
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -6,20 +6,20 @@ int CountOfSecondHighestElement(vector<int> arr, int n){
   
   int largest = arr[0];
   int second = INT_MIN;
-  // int count = 1;
-  vector<int> secondLargest;
+  //int count = 1;
   //int m = secondLargest.size();
   
-  for(int i = 0; i<n; i++){
+  for(int i = 1;i<n; i++){
     if(arr[i] > largest){
       largest = arr[i];
       second = largest;
     }else if(arr[i] > second && arr[i] < largest){
       second = arr[i];
+    }else if(arr[i] == second){
+      i++;
     }
   }
-  secondLargest.push_back(second);
-  return secondLargest.size();
+  return second;
 }
 
 int main(){
@@ -27,7 +27,7 @@ int main(){
   cin>>n;
 
   vector<int> arr(n);
-  for(int i=0; i<n; i++){
+  for(int i=1; i<n; i++){
     cin>>arr[i];
   }
 
