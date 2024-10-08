@@ -1,3 +1,4 @@
+// // cpp code to return the sum of all the divisors of a given integer
 // #include<bits/stdc++.h>
 // using namespace std;
 
