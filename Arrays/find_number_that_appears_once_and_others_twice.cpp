@@ -1,5 +1,5 @@
-#include <bits/stdc++.h>
-using namespace std;
+// #include <bits/stdc++.h>
+// using namespace std;
 
 // brute force approach
 // for every element in the array we will have a count variable to store their occurences. If it is one, we return the number
